@@ -1,30 +1,61 @@
-import React, { Component } from 'react';
-import { Nav } from 'react-bootstrap';
-import Photo from "../Home/pic/Rectangle 89.png"
-import VK from "../Home/pic/free-icon-social-13670425 (2).png"
-import TG from "../Home/pic/free-icon-telegram-2111644 (2).png"
-import "./style.css"
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+import './style.css'
 
-export default class Home extends Component {
-  render() {
-    return (
-      <div className='main-con'>
-        <div className="platform-introduction-container1">
-		<div className="psychotherapy-platform-layout1"> <img alt='smth' src={Photo} className="image-container-1" />
-			<div className="psychotherapy-info-block">
-				<div className="psychotherapy-platform-welcome">
-					<p className="majestic-heading-1">Андрей Шамро</p>
-					<p className="psychotherapy-text-style"> Меня зовут Андрей. Я психолог, супервизор, ведущий онлайн групп.
-						<br />Особую любовь питаю к групповому формату взаимодействия. И жизнь люблю. И детей своих. И работу. Верю, что можно всё настроить как хочется – главное хотеть и не терять оптимизма. </p>
-					<div className="content-wrapper-1">
-						<Nav.Link className='image-avatar' href="https://vk.com/andreyshamro"> <img src={VK} alt="VK" /> </Nav.Link>
-						<Nav.Link className='image-container-with-border' href="https://t.me/prof_identity"> <img src={TG} alt="TG" /> </Nav.Link>
-					</div>
-				</div>
-			</div>
-		</div>
-	    </div>
-      </div>
-    );
-  }
+const Specialists = () => {
+    const [specialistsData, setSpecialistsData] = useState([]);
+	
+useEffect(() => {
+	const fetchSpecialistsData = async () => {
+		try {
+			const response = await axios.get('https://docs.google.com/spreadsheets/d/e/2PACX-1vRMIe9Cx1g9QmlpcGokDNNLpNovTcmAGH3exFQ-RIUZW1KdlGOlcSlnnxQk5b9qa5jiGELQe4HiEzNL/pubhtml');
+			const htmlData = response.data;
+			const parser = new DOMParser();
+			const parsedHtml = parser.parseFromString(htmlData, 'text/html');
+			const tableRows = parsedHtml.querySelectorAll('tr');
+
+			const data = [];
+			tableRows.forEach((row, index) => {
+				if (index > 1) {
+					const rowData = {
+						image: row.cells[1].innerText,
+						name: row.cells[2].innerText,
+						description: row.cells[3].innerText,
+						tg: row.cells[4].innerText,
+					};
+					data.push(rowData);
+			}
+			});
+
+			setSpecialistsData(data);
+		} catch (error) {
+			console.error('Error fetching schedule data:', error);
+		}
+	};
+
+	fetchSpecialistsData();
+	const interval = setInterval(fetchSpecialistsData, 30000);
+
+	return () => clearInterval(interval);
+}, []);
+return (
+	<div className="specialists-container">
+  {specialistsData.map((specialist, index) => (
+    <div className="specialist-card">
+	<div className="specialist-image-container">
+	  <img src={specialist.image} alt={specialist.name} />
+	</div>
+	<div className="specialist-info-container">
+	  <p className='specialist-name'>{specialist.name}</p>
+	  <p className='specialist-description'>{specialist.description.length > 1000 ? specialist.description.substr(0, 1000) + '...' : specialist.description}</p>
+	  <button onClick={() => window.location.href = specialistsData.tg} className="tg-group-schedule-button">
+              <p className='modal_button-txt'>Написать специалисту</p>
+            </button>
+	</div>
+  </div>
+  ))}
+</div>
+  );
 }
+
+export default Specialists;
