@@ -1,0 +1,59 @@
+.smajestic-heading-0 {
+    padding-top: 400px;
+    font: var(--font-weight-900) 96px Nunito, sans-serif;
+    color: var(--color-darkslategrey-d26bdb37);
+    letter-spacing: 24.96px;
+    white-space: pre-wrap;
+}
+
+.sheading-con {
+    justify-content: center;
+    text-align: center;
+}
+
+.smajestic-heading1 {
+    font: 32px Podkova, sans-serif;
+    color: var(--color-darkslategrey-d26bdb37);
+    white-space: pre-wrap;
+    font-weight: 400;
+}
+
+.smajestic-heading2 {
+    padding-top: 15px;
+    font: var(--font-weight-400) 20px Podkova, sans-serif;
+    color: var(--color-darkslategrey-d26bdb37);
+    white-space: pre-wrap;
+}
+
+.scover-con {
+    height: 1200px;
+    background-image: url(../pic/background123.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.svisionary-text {
+    font: var(--font-weight-400) 32px Podkova, serif;
+    color: rgba(160, 182, 50, 1);
+    text-align: left;
+}
+
+.sarrowc {
+    padding-top: 30px;
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    width: 63px;
+    max-width: initial;
+    height: 58px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.smore {
+    padding-top: 80px;
+    font: var(--font-weight-400) 20px Podkova, sans-serif;
+    color: var(--color-darkslategrey-d26bdb37);
+    white-space: pre-wrap;
+}

@@ -1,0 +1,135 @@
+.smaindivway {
+    margin-top: 150px;
+    width: 100%;
+    height: 100%;
+    min-height: 1500px;
+}
+
+.sleft {
+    margin-top: 100px;
+    margin-left: 35%;
+    text-align: left;
+    width: calc(100%/2);
+    height: 150px;
+  }
+  
+.sright {
+    margin-top: 50px;
+    margin-right: 40%;
+    text-align: center;
+    width: calc(100%/2);
+    height: 150px;
+  }
+
+.sdivflex {
+    background-image: url(../pic/1s.png);
+    background-size: 110px 140px;
+    background-repeat: no-repeat;
+    background-position: 34% 80%;
+    margin-top: 80px;
+    display: flex;
+  }
+
+.sitemtext {
+    width: 400px;
+    flex: 0 0 auto;
+    font: 16px Rubik, sans-serif;
+    font-weight: 400;
+    color: rgba(81, 109, 133, 1);
+    text-align: left;
+    white-space: pre-wrap;
+}
+
+.simgfirst {
+    border: 8px solid rgba(191, 202, 133, 1);
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+}
+
+.sright1 {
+    margin-right: 35%;
+    margin-top: 90px;
+    text-align: left;
+    width: calc(100%/2);
+    height: 150px;
+  }
+  
+.sleft1 {
+    margin-left: 35%;
+    margin-top: 50px;
+    text-align: center;
+    width: calc(100%/2);
+    height: 150px;
+  }
+
+.sdivflex1 {
+    background-image: url(../pic/2s.png);
+    background-size: 110px 140px;
+    background-repeat: no-repeat;
+    background-position: 61% 53%;
+    margin-top: 80px;
+    display: flex;
+  }
+
+  .sdivflex2 {
+    background-image: url(../pic/3s.png);
+    background-size: 110px 140px;
+    background-repeat: no-repeat;
+    background-position: 34% 53%;
+    margin-top: 80px;
+    display: flex;
+  }
+
+.sitem-header1 {
+    margin-top: 50px;
+    font: 24px Podkova, serif;
+    font-weight: 800;
+    color: var(--color-darkslategrey-d26bdb37);
+    white-space: pre-wrap;
+}
+
+.sitem-header2 {
+    margin-top: 30px;
+    font: 24px Podkova, serif;
+    font-weight: 800;
+    color: var(--color-darkslategrey-d26bdb37);
+    white-space: pre-wrap;
+}
+
+.sitem-header {
+    margin-top: 30px;
+    font: 24px Podkova, serif;
+    font-weight: 800;
+    color: var(--color-darkslategrey-d26bdb37);
+    white-space: pre-wrap;
+}
+
+.sgroup-schedule-button {
+    box-sizing: border-box;
+    position: relative;
+    display: inline-block;
+    width: 350px;
+    min-width: 350px;
+    height: 64px;
+    font: var(--font-weight-400) var(--font-size-20) Podkova, serif;
+    color: var(--color-darkslategrey-d26bdb37);
+    cursor: pointer;
+    background-color: rgba(194, 223, 234, 1);
+    border: 3px solid;
+    border-color: rgb(95, 132, 160);
+    border-radius: 52px;
+    box-shadow: 0px 6px 0px rgb(95, 132, 160);
+    transition: all .2s;
+    padding: 20px 25px;
+}
+.sgroup-schedule-button:active {
+    top: 3px;
+    box-shadow: 0 2px 0px rgb(95, 132, 160);
+    transition: all .2s;
+}
+
+.sbuttoncon {
+    flex: 0 0 auto;
+    margin-top: 50px;
+}

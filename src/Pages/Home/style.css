@@ -1,0 +1,14 @@
+:root {
+    --color-white: #fff;
+    --color-darkslategrey-d26bdb37: #3B4F60;
+    --font-weight-400: 400;
+    --font-weight-900: 900;
+    --font-size-20: 20px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Podkova:wght@400..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+.main-con {
+    margin-top: 70px;
+}

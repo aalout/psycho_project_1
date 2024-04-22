@@ -1,0 +1,115 @@
+.square {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центрирование по вертикали */
+    border-radius: 57px; /* Скругление краев */
+    padding: 20px; /* Внутренний отступ */
+    background-color: rgba(202, 221, 228, 1); /* Цвет фона */
+    max-width: 80%; /* Ширина квадрата */
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Центрирование элементов по горизонтали в строке */
+    margin-bottom: 30px; /* Отступ между строками */
+}
+
+.item1 {
+    background-image: url(../pic/1.png);
+    background-size: 100px 120px;
+    background-repeat: no-repeat;
+    background-position: 10% 0%;
+    flex: 0 0 calc(30% - 100px); /* Ширина каждого пункта - точно 30%, с учетом отступа в 100px */
+    margin: 50px; /* Расстояние между пунктами */
+    width: 400px;
+    height: 200px;
+}
+
+.item2 {
+    background-image: url(../pic/2.png);
+    background-size: 100px 120px;
+    background-repeat: no-repeat;
+    background-position: 10% 0%;
+    flex: 0 0 calc(30% - 100px); /* Ширина каждого пункта - точно 30%, с учетом отступа в 100px */
+    margin: 50px; /* Расстояние между пунктами */
+    width: 400px;
+    height: 200px;
+}
+
+
+.item3 {
+    background-image: url(../pic/3.png);
+    background-size: 100px 120px;
+    background-repeat: no-repeat;
+    background-position: 10% 0%;
+    flex: 0 0 calc(30% - 100px); /* Ширина каждого пункта - точно 30%, с учетом отступа в 100px */
+    margin: 50px; /* Расстояние между пунктами */
+    width: 400px;
+    height: 200px;
+}
+
+
+.item4 {
+    background-image: url(../pic/4.png);
+    background-size: 100px 120px;
+    background-repeat: no-repeat;
+    background-position: 10% 0%;
+    flex: 0 0 calc(30% - 100px); /* Ширина каждого пункта - точно 30%, с учетом отступа в 100px */
+    margin: 50px; /* Расстояние между пунктами */
+    width: 400px;
+    height: 200px;
+}
+
+
+.item5 {
+    background-image: url(../pic/5.png);
+    background-size: 100px 120px;
+    background-repeat: no-repeat;
+    background-position: 10% 0%;
+    flex: 0 0 calc(30% - 100px); /* Ширина каждого пункта - точно 30%, с учетом отступа в 100px */
+    margin: 50px; /* Расстояние между пунктами */
+    width: 400px;
+    height: 200px;
+}
+
+
+.item6 {
+    background-image: url(../pic/6.png);
+    background-size: 100px 120px;
+    background-repeat: no-repeat;
+    background-position: 10% 0%;
+    flex: 0 0 calc(30% - 100px); /* Ширина каждого пункта - точно 30%, с учетом отступа в 100px */
+    margin: 50px; /* Расстояние между пунктами */
+    width: 400px;
+    height: 200px;
+}
+
+
+.fit-con {
+    margin-top: 100px;
+    margin-left: 15%;
+}
+
+.itemtext11 {
+    font: 17px Rubik, sans-serif;
+    font-weight: 400;
+    color: rgba(81, 109, 133, 1);
+}
+
+.itemtitle11 {
+    margin-top: 65px;
+    font: 25px Podkova, sans-serif;
+    font-weight: 800;
+    color: var(--color-darkslategrey-d26bdb37);
+    white-space: pre-wrap;
+}
+
+.itemtitle111 {
+    margin-top: 65px;
+    font: 25px Podkova, sans-serif;
+    font-weight: 800;
+    color: var(--color-darkslategrey-d26bdb37);
+    white-space: pre-wrap;
+}

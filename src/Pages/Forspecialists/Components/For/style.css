@@ -1,0 +1,55 @@
+.forcontainer {
+    background-image: url(../pic/2222.png);
+    background-size: cover;
+    background-position: center top -50px;
+    background-position: center bottom -130px;
+    margin-top: 250px;
+    width: 100%;
+  }
+  
+  .fortoppane {
+    text-align: center;
+    width: 100%;
+    height: 150px;
+  }
+  
+  .forleftpane {
+    text-align: center;
+    width: calc(100%/4);
+    height: 150px;
+  }
+  
+  .formiddlepane {
+    text-align: center;
+    width: calc(100%/4);
+    height: 150px;
+  }
+  
+  .forrightpane {
+    text-align: center;
+    width: calc(100%/4);
+    height: 150px;
+  }
+  
+  body {
+    margin: 0!important;
+  }
+  
+  .ford-flex {
+    margin-top: 50px;
+    display: flex;
+  }
+  
+  .forheading-text {
+    font: 32px Podkova, serif;
+    font-weight: 800;
+    color: var(--color-darkslategrey-d26bdb37);
+    white-space: pre-wrap;
+  }
+  
+  .forsecondary-text {
+    font: 16px Rubik, sans-serif;
+    font-weight: 400;
+    color: rgba(81, 109, 133, 1);
+    white-space: pre-wrap;
+  }

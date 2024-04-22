@@ -1,0 +1,277 @@
+.schelude_heading {
+    box-sizing: border-box;
+    width: 541px;
+    font: 32px Podkova, serif;
+    font-weight: 900;
+    color: var(--color-darkslategrey-d26bdb37);
+    text-align: center;
+    white-space: pre-wrap;
+}
+
+.schelude_con {
+    margin-top: 200px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.schelude_item {
+    height: 120px;
+    margin-top: 30px;
+    background-image: url(../pic/lesson_back123456.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 30px;
+  }
+  
+  .schelude_button {
+    font: 24px Podkova, serif;
+    font-weight: 900;
+    color: var(--color-darkslategrey-d26bdb37);
+    text-align: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: rgba(202, 221, 228, 1);
+    margin-right: 30px;
+    border: 3px solid;
+    border-color: var(--color-darkslategrey-d26bdb37);
+  }
+
+  .schelude_button:hover {
+    color: rgba(202, 221, 228, 1);
+    background-color: var(--color-darkslategrey-d26bdb37);
+  }
+
+.schelude_expanded {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 10px;
+  }
+  
+  .schelude_item.expanded .schelude_expanded {
+    display: flex;
+  }
+  
+  .modal {
+    border-radius: 40px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    z-index: 1000;
+    width: 50%;
+    height: 50%;
+  }
+  
+  .modal_close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  body.modal-open {
+    overflow: hidden;
+  }
+  
+  .modal.visible {
+    display: block;
+  }
+
+  .blur-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    filter: blur(2px);
+    transition: filter 0.3s ease;
+    z-index: 998;
+    visibility: hidden;
+  }
+  
+  .blur-background.visible {
+    filter: blur(2px);
+    visibility: visible;
+  }
+
+  .schelude_lesson_name {
+    position: absolute; 
+    left: 180px; 
+    margin-top: 13px;
+    font: 24px Podkova, serif;
+    font-weight: 900;
+    color: var(--color-darkslategrey-d26bdb37);
+    text-align: left;
+    white-space: nowrap;
+    padding-right: 70%;
+  }
+
+  .schelude_lesson_img {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+  }
+
+  .schelude_lesson_date {
+    position: absolute; 
+    right: 150px; 
+    margin-top: 13px;
+    font: 24px Podkova, serif;
+    font-weight: 900;
+    color: var(--color-darkslategrey-d26bdb37);
+    text-align: center;
+    white-space: pre-wrap;
+  }
+
+  /* ------------------------------------------------------------------------------------------------------- */
+
+.modal_psychotherapy-platform-layout {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.modal_image-container-1 {
+    box-sizing: border-box;
+    display: block;
+    width: 500px;
+    max-width: initial;
+    border-radius: 30px;
+    height: 500px;
+    border: none;
+    object-fit: cover;
+    margin-top: 20px;
+}
+.modal_psychotherapy-info-block {
+    flex: 0 1 auto;
+    align-self: flex-start;
+    padding-bottom: 50px;
+    margin-left: 23px;
+}
+.modal_main-heading-style {
+    box-sizing: border-box;
+    width: 541px;
+    font: 32px Podkova, serif;
+    font-weight: 900;
+    color: var(--color-darkslategrey-d26bdb37);
+    text-align: center;
+    white-space: pre-wrap;
+}
+.modal_psychotherapy-platform-welcome {
+    box-sizing: border-box;
+    width: 100%;
+    padding-right: 3px;
+    padding-left: 3px;
+    margin-top: 30px;
+}
+.modal_majestic-heading-name {
+    margin-top: 20px;
+    margin-left: 25px;
+    padding-top: 13px;
+    font: 24px Podkova, serif;
+    font-weight: 800;
+    color: var(--color-darkslategrey-d26bdb37);
+    white-space: pre-wrap;
+}
+.modal_majestic-heading-1 {
+    font: 24px Podkova, serif;
+    font-weight: 800;
+    color: var(--color-darkslategrey-d26bdb37);
+    white-space: pre-wrap;
+}
+.modal_majestic-heading-2 {
+    margin-top: 20px;
+    font: 20px Podkova, serif;
+    font-weight: 800;
+    color: var(--color-darkslategrey-d26bdb37);
+    white-space: pre-wrap;
+}
+.modal_psychotherapy-text-style {
+    box-sizing: border-box;
+    width: 100%;
+    font: 16px Rubik, sans-serif;
+    font-weight: 400;
+    color: rgba(81, 109, 133, 1);
+    text-align: left;
+    white-space: pre-wrap;
+}
+.modal_content-wrapper-1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+.modal_image-avatar {
+    box-sizing: border-box;
+    display: block;
+    width: 41px;
+    max-width: initial;
+    height: 41px;
+    border: none;
+    object-fit: cover;
+}
+.modal_image-container-with-border {
+    box-sizing: border-box;
+    display: block;
+    width: 31px;
+    max-width: initial;
+    height: 31px;
+    margin-left: 14px;
+    border: none;
+    object-fit: cover;
+}
+.modal_group-schedule-button-container {
+    padding-right: 48px;
+}
+
+.modal_specialist_name_con {
+    height: 60px;
+    background-image: url(../pic/Polygon\ 104.png);
+    background-repeat: no-repeat;
+}
+
+.modal_group-schedule-button-container {
+    padding-top: 240px;
+    padding-left: 120px;
+}
+/* knopka */
+.modal_group-schedule-button {
+    box-sizing: border-box;
+    position: relative;
+    display: inline-block;
+    width: 435px;
+    min-width: 435px;
+    height: 64px;
+    font: var(--font-weight-400) var(--font-size-20) Podkova, serif;
+    color: var(--color-darkslategrey-d26bdb37);
+    cursor: pointer;
+    background-color: rgba(194, 223, 234, 1);
+    border: 3px solid;
+    border-color: rgb(95, 132, 160);
+    border-radius: 52px;
+    box-shadow: 0px 6px 0px rgb(95, 132, 160);
+    transition: all .2s;
+    padding: 20px 25px;
+    top: 0;
+    margin:0 20px;
+}
+.modal_group-schedule-button:active {
+    top: 3px;
+    box-shadow: 0 2px 0px rgb(95, 132, 160);
+    transition: all .2s;
+}
