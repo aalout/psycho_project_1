@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import FirstIMG from "../pic/psycologist-therapy-group-processing-in-the-circle-6-people-641796731.png"
-import SecondIMG from "../pic/2-people-trusts-themselfs-in-psycological-plan-909300349.png"
-import ThirdIMG from "../pic/group-psycotherapy-162475280.png"
+import FirstIMG from "../pic/work-interview-official.jpeg"
+import SecondIMG from "../pic/enrollment-in-the-training-course.jpeg"
+import ThirdIMG from "../pic/you-are-part-of-the-community-of-small-official-group.jpeg"
 import './style.css'
 
 export default class SpecialistsWay extends Component {

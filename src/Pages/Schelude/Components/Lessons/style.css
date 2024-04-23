@@ -1,6 +1,5 @@
 .schelude_heading {
     box-sizing: border-box;
-    width: 541px;
     font: 32px Podkova, serif;
     font-weight: 900;
     color: var(--color-darkslategrey-d26bdb37);
@@ -18,16 +17,22 @@
 }
 
 .schelude_item {
-    height: 120px;
-    margin-top: 30px;
-    background-image: url(../pic/lesson_back123456.png);
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 0 30px;
+  height: 120px;
+  margin-top: 30px;
+  background: linear-gradient(90deg, #83a0bb 0%, #CADDE4 100%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 30px;
+  transition: background-position 0.5s ease;
+  }
+
+  .schelude_item:hover {
+    background-position: left bottom;
+    color: white;
   }
   
   .schelude_button {

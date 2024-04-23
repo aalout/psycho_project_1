@@ -53,3 +53,30 @@
     color: rgba(81, 109, 133, 1);
     white-space: pre-wrap;
   }
+
+  @media (max-width: 1870px) {
+    .forcontainer {
+      background-image: none;
+      background-size: cover;
+      background-position: center top -50px;
+      background-position: center bottom -130px;
+      margin-top: 250px;
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    .forheading-text {
+      font: 24px Podkova, serif;
+      font-weight: 800;
+      color: var(--color-darkslategrey-d26bdb37);
+      white-space: pre-wrap;
+    }
+    
+    .forsecondary-text {
+      font: 10px Rubik, sans-serif;
+      font-weight: 400;
+      color: rgba(81, 109, 133, 1);
+      white-space: pre-wrap;
+    }
+  }

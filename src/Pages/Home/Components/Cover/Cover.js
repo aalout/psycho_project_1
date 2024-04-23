@@ -7,7 +7,7 @@ import "./style.css"
 export default class Cover extends Component {
   render() {
     return (
-      <div>
+      <div className='home-cover-con'>
         <div className="content-wrapper">
 		<div className="central-content-container">
 			<div className="therapy-experience-section">

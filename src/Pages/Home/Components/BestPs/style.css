@@ -60,3 +60,19 @@
     color: var(--color-darkslategrey-d26bdb37);
     white-space: pre-wrap;
   }
+
+  @media (max-width: 1600px) {
+    .gleftpane {
+      display: none;
+    }
+    
+    .grightpane {
+      display: none;
+    }
+
+    .gmiddlepane {
+      text-align: center;
+      width: calc(100%/3);
+      height: 300px;
+    }
+  }

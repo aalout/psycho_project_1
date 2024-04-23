@@ -42,3 +42,14 @@
   .logo {
     margin-left: 200px;
   }
+
+  @media (max-width: 770px) {
+    .socialTG {
+      display: none;
+    }
+
+    .socialVK {
+      display: none;
+    }
+
+  }

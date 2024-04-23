@@ -19,13 +19,11 @@
   
   .specialist-image-container img {
     width: 100%;
-    height: auto;
   }
 
   .specialist-info-container {
     background-image: url(./recqqq.png);
     background-size: cover;
-    height: 100%;
     width: 60%;
     padding: 20px;
     box-sizing: border-box;
@@ -45,7 +43,7 @@
     font: 16px Rubik, sans-serif;
     font-weight: 400;
     color: rgba(81, 109, 133, 1);
-    width: 500px;
+    width: 65%;
     word-wrap: break-word;
   }
 

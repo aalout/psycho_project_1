@@ -46,7 +46,7 @@ const Lessons = () => {
         };
 
         fetchScheduleData();
-        const interval = setInterval(fetchScheduleData, 30000);
+        const interval = setInterval(fetchScheduleData, 30000000);
 
         return () => clearInterval(interval);
     }, []);

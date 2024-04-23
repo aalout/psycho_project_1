@@ -17,12 +17,12 @@ export default class Way extends Component {
               <p className='itemtext'>Образование группы всегда является интересным процессом где вы можете выявить знакомые вам роли, которые вы используете при нахождении с незнакомыми вам людьми и попробовать новые.</p>
               </div>
               <div className='right'>
-              <img alt='smth' src={FirstIMG} className='imgfirst'/>
+              <img alt='smth' src={FourthIMG} className='imgfirst'/>
               </div>
             </div>
             <div className='divflex1'>
               <div className='left1'>
-              <img alt='smth' src={SecondIMG} className='imgfirst'/>
+              <img alt='smth' src={FirstIMG} className='imgfirst'/>
               </div>
               <div className='right1'>
               <p className='item-header'>Влияние на процессы</p>
@@ -35,12 +35,12 @@ export default class Way extends Component {
               <p className='itemtext'>Дистанция между членами группы постепенно уменьшается из-за увеличивающегося уровня доверия друг к другу. У вас есть возможность познакомиться с тем, как вы сближаетесь или отдаляетесь в контакте с другими людьми.</p>
               </div>
               <div className='right'>
-              <img alt='smth' src={ThirdIMG} className='imgfirst'/>
+              <img alt='smth' src={SecondIMG} className='imgfirst'/>
               </div>
             </div>
             <div className='divflex3'>
               <div className='left1'>
-              <img alt='smth' src={FourthIMG} className='imgfirst'/>
+              <img alt='smth' src={ThirdIMG} className='imgfirst'/>
               </div>
               <div className='right1'>
               <p className='item-header'>Завершение процессов</p>

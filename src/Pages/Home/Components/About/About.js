@@ -7,14 +7,14 @@ export default class About extends Component {
   render() {
 	const opts = {
 		playerVars: {
-		  autoplay: 1, // autoplay the video
+		  autoplay: 1,
 		},
 	};
     return (
 		<div className='about-con' id='about'>
 		  <p className="main-heading-style">О проекте</p>
 		  <div className='video-con'>
-			<YouTube videoId="-POgTXAuckU" opts={opts} />
+			<YouTube className='youtube' videoId="-POgTXAuckU" opts={opts} />
 		  </div>
 		  <div className="group-schedule-button-container">
 			<Nav.Link href="/schedule">
