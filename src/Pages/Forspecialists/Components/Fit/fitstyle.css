@@ -88,6 +88,7 @@
 
 
 .fit-con {
+    background-color: #fff;
     margin-top: 100px;
     margin-left: 15%;
 }
@@ -113,3 +114,4 @@
     color: var(--color-darkslategrey-d26bdb37);
     white-space: pre-wrap;
 }
+

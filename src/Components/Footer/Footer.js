@@ -28,7 +28,7 @@ export default class Footer extends Component {
         </li>
 
         <li className='gap'>
-          <a href="/shelude"> <img alt="smth" src={arrow} className='arrow'/>Расписание</a>
+          <a href="/schedule"> <img alt="smth" src={arrow} className='arrow'/>Расписание</a>
         </li>
             
         <li className='gap'>
@@ -52,10 +52,6 @@ export default class Footer extends Component {
         <li className='gap'>
           <a href="https://t.me/prof_identity"><img alt="smth" src={arrow} className='arrow'/>Telegram</a>
         </li>
-        
-        <li className='gap'>
-          <a href="gmail.com"><img alt="smth" src={arrow} className='arrow'/>Email</a>
-        </li>
       </ul>
     </li>
   </ul>
@@ -64,7 +60,7 @@ export default class Footer extends Component {
     <p>&copy; 2024 Среда. All rights reserved.</p>
     
     <div className="legal__links">
-      <span>Made with <span className="heart">♥</span> from aalout</span>
+      <span>Made by aalout</span>
     </div>
   </div>
       </div>

@@ -4,7 +4,7 @@ import "./fitstyle.css"
 export default class Fit extends Component {
   render() {
     return (
-        <div className='fit-con'>
+        <div id='fit' className='fit-con'>
         <div className="square">
             <div className="row">
                 <div className="item1">

@@ -7,7 +7,7 @@ export default class About extends Component {
   render() {
 	const opts = {
 		playerVars: {
-		  autoplay: 1,
+		  autoplay: 0,
 		},
 	};
     return (

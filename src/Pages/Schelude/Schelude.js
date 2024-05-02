@@ -5,7 +5,7 @@ import Lessons from './Components/Lessons/Lessons';
 export default class Home extends Component {
   render() {
     return (
-      <div>
+      <div className='conofcons'>
         <SCover />
         <Lessons />
       </div>

@@ -11,7 +11,7 @@ export default class Cover extends Component {
         <div className="content-wrapper">
 		<div className="central-content-container">
 			<div className="therapy-experience-section">
-				<p className="majestic-heading">CРЕДА</p>
+				<p className="majestic-heading">СРЕДА</p>
 				<p className="majestic-text-block">Проект для тех, кто любит<br /><span className="visionary-text">групповой</span><span> формат<br />психологической поддержки</span> </p>
 			</div>
 			<div className="detailed-info-container1">

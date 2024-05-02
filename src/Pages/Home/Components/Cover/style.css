@@ -3,6 +3,10 @@
     width: 100%;
 }
 
+.home-cover-con {
+    background-color: #fff;
+}
+
 .content-wrapper {
     background-image: url(../../pic/bg.png);
     background-size: cover;
@@ -28,6 +32,7 @@
     color: var(--color-darkslategrey-d26bdb37);
     letter-spacing: 24.96px;
     white-space: pre-wrap;
+    text-shadow: rgba(191, 191, 191, 1) 0px 4px 4px;
 }
 
 .majestic-text-block {
@@ -62,11 +67,12 @@
 
 .detail-text-block {
     box-sizing: border-box;
-    width: 201px;
+    min-width: 201px;
     font: var(--font-weight-400) var(--font-size-20) Podkova, serif;
     color: var(--color-darkslategrey-d26bdb37);
-    text-align: center;
+    text-align: left;
     white-space: pre-wrap;
+    padding-left: 45px;
 }
 
 .detailed-info-container {
@@ -81,4 +87,31 @@
     width: 63px;
     max-width: initial;
     height: 58px;
+}
+
+@media (max-width: 770px) {
+    .content-wrapper {
+      background-image: none;
+      padding-left: 0%;
+      min-height: auto;
+    }
+
+    .central-content-container {
+        align-items: center;
+        justify-content: center;
+        padding-top: 10%;
+        padding-bottom: 0;
+    }
+
+    .majestic-text-block {
+        text-align: center;
+    }
+
+    .visionary-text {
+        text-align: center;
+    }
+
+    .majestic-heading {
+        margin-left: 15px;
+    }
 }

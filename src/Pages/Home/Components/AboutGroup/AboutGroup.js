@@ -5,7 +5,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll'
 export default class AboutGroup extends Component {
   render() {
     return (
-      <div>
+      <div className='aboutgroup-con'>
         <div className="group-session-container">
 		<div className="group-session-info-container1">
 			<p className="main-heading-text-style">О групповых сессиях</p>

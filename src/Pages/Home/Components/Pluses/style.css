@@ -5,6 +5,7 @@
   background-position: center bottom -10px;
   margin-top: 200px;
   width: 100%;
+  background-color: #fff;
 }
 
 .toppane {
@@ -51,4 +52,10 @@ body {
   font-weight: 400;
   color: rgba(81, 109, 133, 1);
   white-space: pre-wrap;
+}
+
+@media (max-width: 1400px) {
+  .container {
+    background-image: none;
+  }
 }

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import "./coverstyle.css"
-import { Nav } from 'react-bootstrap'
 import Arrow from "../../../Home/pic/Arrow.png"
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 export default class Cover extends Component {
   render() {
@@ -18,7 +18,7 @@ export default class Cover extends Component {
 				    </button>
                 </div>
                 <p className='more'>Подробнее</p>
-				<Nav.Link className='arrowc' href="/"> <img src={Arrow} alt="smth" /> </Nav.Link>
+                <AnchorLink href='#fit'><div className='arrowc' href="/"> <img src={Arrow} alt="smth" /> </div> </AnchorLink>
             </div>
         </div>
       </div>

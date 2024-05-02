@@ -16,7 +16,7 @@ export default class Header extends Component {
   render() {
     return (
         <>
-        <Navbar fixed='top' expand="md" bg="light" variant="light" className="custom-navbar">
+        <Navbar fixed='top' expand="md" className="custom-navbar">
             <Container fluid className="nav-container">
                 <Navbar.Brand href="/">
                     <img 

@@ -46,7 +46,7 @@ const Lessons = () => {
         };
 
         fetchScheduleData();
-        const interval = setInterval(fetchScheduleData, 30000000);
+        const interval = setInterval(fetchScheduleData, 30000);
 
         return () => clearInterval(interval);
     }, []);
@@ -76,7 +76,7 @@ const Lessons = () => {
     }, [modalVisible]);
 
     return (
-        <div className='schelude_con'>
+        <div id='schelude' className='schelude_con'>
           <p className='schelude_heading'>Расписание групп</p>
           {scheduleData.map((item, index) => (
             <div onClick={() => handleShowModal(item)} className='schelude_item' key={index}>

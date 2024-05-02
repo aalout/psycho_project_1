@@ -35,7 +35,7 @@ const Specialists = () => {
         };
 
         fetchSpecialistsData();
-        const interval = setInterval(fetchSpecialistsData, 30000000);
+        const interval = setInterval(fetchSpecialistsData, 30000);
 
         return () => clearInterval(interval);
     }, []);
@@ -48,16 +48,37 @@ const Specialists = () => {
                         <img src={specialist.image} alt={specialist.name} />
                     </div>
                     <div className="specialist-info-container">
-                        <p className='specialist-name'>{specialist.name}</p>
-                        <p className='specialist-description'>{specialist.description.length > 1000 ? specialist.description.substr(0, 1000) + '...' : specialist.description}</p>
-                        <button onClick={() => window.location.href = specialist.tg} className="tg-group-schedule-button">
-                            <p className='modal_button-txt'>Написать специалисту</p>
-                        </button>
-                    </div>
-                </div>
-            ))}
+            <p className="specialist-name">{specialist.name}</p>
+            <TextCollapse text={specialist.description} />
+            <button onClick={() => window.location.href = specialist.tg} className="tg-group-schedule-button">
+              <p className="modal_button-txt">Написать специалисту</p>
+            </button>
+          </div>
         </div>
+      ))}
+    </div>
+  );
+};
+
+const TextCollapse = ({ text }) => {
+    const [isExpanded, setIsExpanded] = useState(false);
+    const [displayText, setDisplayText] = useState(text.substring(0, 500) + '...');
+  
+    const handleExpand = () => {
+      setIsExpanded(true);
+      setDisplayText(text);
+    };
+  
+    return (
+      <p className="specialist-description">
+        {displayText}
+        {isExpanded? null : (
+          <span>
+            <button onClick={handleExpand}> Подробнее</button>
+          </span>
+        )}
+      </p>
     );
-}
+  };
 
 export default Specialists;
