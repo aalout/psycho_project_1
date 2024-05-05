@@ -4,7 +4,9 @@ import "./fitstyle.css"
 export default class Fit extends Component {
   render() {
     return (
-        <div id='fit' className='fit-con'>
+        <div>
+            <div id='fit' className="fittoppane"><p className="forheading-text">Участие в проекте — это:</p></div>
+        <div className='fit-con'>
         <div className="square">
             <div className="row">
                 <div className="item1">
@@ -34,6 +36,7 @@ export default class Fit extends Component {
                     <p className='itemtext11'>Посещение мероприятий доверенного круга экспертов</p>
                 </div>
             </div>
+        </div>
         </div>
         </div>
     )  

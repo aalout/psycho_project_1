@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Nav } from 'react-bootstrap'
 import FirstIMG from "../pic/work-interview-official.jpeg"
 import SecondIMG from "../pic/enrollment-in-the-training-course.jpeg"
 import ThirdIMG from "../pic/you-are-part-of-the-community-of-small-official-group.jpeg"
@@ -35,9 +36,13 @@ export default class SpecialistsWay extends Component {
             <img alt='smth' src={ThirdIMG} className='simgfirst'/>
             </div>
           </div>
-          <div className='button-container'>
-            <button className="group-schedule-button">Записаться на собеседование</button>
-            </div>
+          <div className='button-container' >
+          <Nav.Link href="https://t.me/andrey_shamro">
+			  <button href="https://t.me/andrey_shamro" className="group-schedule-button">
+				<p className='button-txt'>Записаться на собеседование</p>
+			  </button>
+			</Nav.Link>
+      </div>
         </div>
       </div>
     )

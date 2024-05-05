@@ -12,7 +12,7 @@ export default class AboutGroup extends Component {
 			<div className="therapy-info-container">
 				<div className="therapy-info-container1">
 					<div className="therapy-section">
-						<p className="therapy-heading">Групповая терапия поможет вам найти и решить проблему, которая вас беспокоит</p>
+						<p className="therapy-heading">Групповые сессии помогут найти и решить проблему, которая вас беспокоит</p>
 						<p className="innovative-path-description">В группе можно научиться видеть и слышать себя шире и многограннее <br/>
 
 В группе можно проявлять себя в безопасной атмосфере<br/>

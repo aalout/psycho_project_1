@@ -5,7 +5,7 @@ export default class For extends Component {
   render() {
     return (
         <div className="forcontainer">
-        <div class="fortoppane"><p className="forheading-text">Для успешного сотрудничества <br/> мы ждём от вас </p></div>
+        <div className="fortoppane"><p className="forheading-text">Для успешного сотрудничества <br/> мы ждём от вас </p></div>
 <div className="ford-flex">
 <div className="forleftpane"><p className="forheading-text">Опыт</p><p className="forsecondary-text">Опыт проведения <br/>групповых сессий с полным циклом</p></div>
 <div className="formiddlepane"><p className="forheading-text">Супервизия</p><p className="forsecondary-text">Регулярное прохождение супервизии <br/>
