@@ -47,8 +47,8 @@
     flex-direction: column;
     align-items: stretch;
     justify-content: center;
-    max-width: 541px;
-    padding-top: 70px;
+    max-width: 600px;
+    padding-top: 35px;
     padding-bottom: 111px;
  }
  .therapy-heading {
@@ -62,7 +62,7 @@
  .innovative-path-description {
     flex: 0 0 auto;
     margin-top: 34px;
-    font: 16px Rubik, sans-serif;
+    font: 17px Rubik, sans-serif;
     font-weight: 400;
     color: rgba(81, 109, 133, 1);
     text-align: left;

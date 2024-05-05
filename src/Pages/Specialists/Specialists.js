@@ -9,6 +9,7 @@ const INTERVAL_TIME = 30000;
 const Specialists = () => {
   const [specialistsData, setSpecialistsData] = useState([]);
   const [expanded, setExpanded] = useState({});
+  const [focusedSpecialist, setFocusedSpecialist] = useState(null);
 
   useEffect(() => {
     const fetchSpecialistsData = async () => {
@@ -46,18 +47,35 @@ const Specialists = () => {
   }, []);
 
   const handleExpand = (id) => {
+    const specialistCard = document.getElementById(`specialist-card-${id}`);
+    // eslint-disable-next-line no-unused-vars
+    const specialistCardRect = specialistCard.getBoundingClientRect();
+    const scrollPosition = window.pageYOffset;
+  
     setExpanded((prevExpanded) => ({...prevExpanded, [id]:!prevExpanded[id] }));
+    if (expanded[id]) {
+      setFocusedSpecialist(null);
+    } else {
+      setFocusedSpecialist(id);
+    }
+  
+    if (!expanded[id]) {
+      setTimeout(() => {
+        window.scrollTo(0, scrollPosition);
+      }, 300);
+    }
   };
 
   return (
     <div className="specialists-container">
       {specialistsData.map((specialist) => (
         <SpecialistCard
-          key={specialist.id}
-          specialist={specialist}
-          expanded={expanded[specialist.id]}
-          onExpand={() => handleExpand(specialist.id)}
-        />
+        key={specialist.id}
+        specialist={specialist}
+        expanded={expanded[specialist.id]}
+        onExpand={() => handleExpand(specialist.id)}
+        focused={focusedSpecialist === specialist.id}
+      />
       ))}
     </div>
   );

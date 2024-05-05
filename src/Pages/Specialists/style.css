@@ -11,12 +11,24 @@
     margin-top: 70px;
     display: flex;
     width: 49%;
-    border-radius: 16px;
-    border: 1px solid rgb(167, 192, 201);
+    border-radius: 24px;
+    border: 1px solid rgba(206, 212, 214, 0.7);
+  }
+
+  .specialist-card.focused {
+    position: fixed;
+    left: 50%;
+    top: 48%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
   }
 
   .expanded {
-    width: 100%;
+    width: 85%;
     flex-basis: 85%;
   }
   
@@ -97,14 +109,24 @@
   margin-left: 5px;
 }
 
-.button-hide {
+.button-show {
   border: none;
   background-color: transparent;
   color: rgb(147, 170, 179);
 }
 
-.button-hide:hover {
+.button-show:hover {
   color: rgb(97, 112, 117);
+}
+
+.button-hide {
+  border: none;
+  background-color: transparent;
+  color: rgba(191, 202, 133, 1);
+}
+
+.button-hide:hover {
+  color: rgb(119, 126, 82);
 }
 
 @media (max-width: 4000px) {

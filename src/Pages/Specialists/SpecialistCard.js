@@ -2,12 +2,14 @@ import React from 'react';
 import TextCollapse from './TextCollapse';
 import "./style.css"
 
-const SpecialistCard = ({ specialist, expanded, onExpand }) => {
-  return (
-    <div
-      className={`specialist-card ${expanded? 'expanded' : ''}`}
-      key={specialist.id}
-    >
+const SpecialistCard = ({ specialist, expanded, onExpand, focused }) => {
+    return (
+      <div
+        className={`specialist-card ${expanded? 'expanded' : ''} ${focused? 'focused' : ''}`}
+        key={specialist.id}
+        id={`specialist-card-${specialist.id}`}
+        style={focused? {} : { position: 'static' }}
+      >
       <div className="specialist-image-container">
         <img src={specialist.image} alt={specialist.name} />
       </div>

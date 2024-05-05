@@ -18,12 +18,10 @@ const TextCollapse = ({ text, expanded, onExpand }) => {
     <div className="specialist-description-text" style={{ whiteSpace: 'pre-wrap' }}>
       {displayText}
       {expanded? (
-        <span>
           <button className='button-hide' onClick={handleExpand}>Скрыть</button>
-        </span>
       ) : (
         <span>
-          <button className='button-hide' onClick={handleExpand}>Подробнее</button>
+          <button className='button-show' onClick={handleExpand}>Подробнее</button>
 </span>
       )}
     </div>
