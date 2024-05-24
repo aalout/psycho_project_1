@@ -99,14 +99,14 @@ const Lessons = () => {
 const Modal = ({ modalVisible, setModalVisible, modalData }) => {
     return (
       <div className={`modal ${modalVisible ? 'visible' : ''}`}>
-        <div className='modal_specialist_name_con'><p className="modal_majestic-heading-name">{modalData.specialist_name}</p></div>
+        <div className='modal_specialist_name_con'><p className="modal_majestic-heading-name">{modalData.specialist_name} {modalData.date}</p> </div>
         <div className="modal_psychotherapy-platform-layout">
         <img className="modal_image-container-1" src={modalData.image_modal} alt="smth" />
         <div className="modal_psychotherapy-info-block">
             <div className="modal_psychotherapy-platform-welcome">
             <span className='modal_close' onClick={setModalVisible}>×</span>
             <p className="modal_majestic-heading-1">{modalData.lesson_name}</p>
-            <p className="modal_psychotherapy-text-style">{modalData.description.split('\n')[0]}</p>
+            <p className="modal_psychotherapy-text-style">{modalData.description}</p>
             <p className="modal_majestic-heading-2">{modalData.price}</p>
             </div>
             <div className="modal_group-schedule-button-container">

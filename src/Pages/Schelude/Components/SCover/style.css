@@ -44,3 +44,33 @@
     color: var(--color-darkslategrey-d26bdb37);
     white-space: pre-wrap;
 }
+
+@media (max-width: 1000px) {
+    .smajestic-heading-0 {
+        padding-top: 200px;
+        font: var(--font-weight-900) 45px Nunito, sans-serif;
+        color: var(--color-darkslategrey-d26bdb37);
+        letter-spacing: 6px;
+        white-space: pre-wrap;
+    }
+
+    .scover-con {
+        height: 600px;
+        background-image: url(../pic/background123.png);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .smajestic-heading1 {
+        font: 24px Podkova, sans-serif;
+        color: var(--color-darkslategrey-d26bdb37);
+        white-space: pre-wrap;
+        font-weight: 400;
+    }
+
+    .svisionary-text {
+        font: var(--font-weight-400) 24px Podkova, serif;
+        color: rgba(160, 182, 50, 1);
+        text-align: left;
+    }
+}

@@ -15,6 +15,10 @@
     justify-content: flex-end;
     width: 100%;
   }
+
+  .collapse {
+    margin-right: 25px;
+  }
   
   .navlink {
     margin-left: 80px;
@@ -22,7 +26,7 @@
     font-family: "Rubik", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 18px;
     font-style: normal;
     color: rgba(59, 79, 96, 1);
   }
@@ -42,6 +46,20 @@
 
   .logo {
     margin-left: 200px;
+  }
+
+  @media (max-width: 1200px) {
+    .socialTG {
+      display: none;
+    }
+
+    .socialVK {
+      display: none;
+    }
+
+    .logo {
+      margin-left: 40px;
+    }
   }
 
   @media (max-width: 770px) {

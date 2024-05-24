@@ -1,9 +1,27 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 //import AnchorLink from 'react-anchor-link-smooth-scroll';
 import "./style.css"
 
 const TextCollapse = ({ text, expanded, onExpand }) => {
   const [displayText, setDisplayText] = useState(text.substring(0, TEXT_TRUNCATE_LENGTH) + '...');
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 1000) {
+        TEXT_TRUNCATE_LENGTH = 200;
+      } else {
+        TEXT_TRUNCATE_LENGTH = 500;
+      }
+      setDisplayText(text.substring(0, TEXT_TRUNCATE_LENGTH) + '...');
+    };
+
+    window.addEventListener('resize', handleResize);
+    handleResize();
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, [text]);
 
   const handleExpand = () => {
     onExpand();
@@ -28,6 +46,6 @@ const TextCollapse = ({ text, expanded, onExpand }) => {
   );
 };
 
-const TEXT_TRUNCATE_LENGTH = 500;
+let TEXT_TRUNCATE_LENGTH = 500;
 
 export default TextCollapse;

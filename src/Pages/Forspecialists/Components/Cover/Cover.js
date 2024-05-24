@@ -10,7 +10,7 @@ export default class Cover extends Component {
       <div className='cover-con'>
         <div className='cover-con1'>
             <div className='heading-con'>
-                <p className="majestic-heading-0">CРЕДА</p>
+                <p className="majestic-heading-0">СРЕДА</p>
                 <p className="majestic-heading1">Хотите стать участником проекта?</p>
                 <div className='cover-button-con'>
                 <Nav.Link href="https://t.me/andrey_shamro">

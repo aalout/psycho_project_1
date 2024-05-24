@@ -26,7 +26,7 @@ export default class Header extends Component {
                     />
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                <Navbar.Collapse id="responsive-navbar-nav">
+                <Navbar.Collapse className='collapse' id="responsive-navbar-nav">
                     <Nav>
                         <Nav.Link className='navlink' href="/schedule">Расписание</Nav.Link>
                         <Nav.Link className='navlink' href="/specialists">Специалисты</Nav.Link>

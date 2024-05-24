@@ -16,23 +16,23 @@ export default class BestPs extends Component {
 	</div>
 	<div className="gd-flex">
 		<div className="gleftpane">
-            <img alt="smth" src={high}/>
+            <img className='best_img' alt="smth" src={high}/>
 			<p className="gsecondary-text">Высшее образование <br />в сфере психологии</p>
 		</div>
 		<div className="gmiddlepane">
-            <img alt="smth" src={groupexp}/>
+            <img className='best_img' alt="smth" src={groupexp}/>
 			<p className="gsecondary-text">Регулярную личную <br /> психотерапию</p>
 		</div>
 		<div className="gmiddlepane">
-            <img alt="smth" src={award}/>
+            <img className='best_img' alt="smth" src={award}/>
 			<p className="gsecondary-text">Регулярную супервизию</p>
 		</div>
 		<div className="gmiddlepane">
-            <img alt="smth" src={diploma}/>
+            <img className='best_img' alt="smth" src={diploma}/>
 			<p className="gsecondary-text">Пройденное обучение на курсе <br />"Ведение онлайн-групп"</p>
 		</div>
 		<div className="grightpane">
-            <img alt="smth" src={online}/>
+            <img className='best_img' alt="smth" src={online}/>
 			<p className="gsecondary-text">Опыт ведения онлайн-групп</p>
 		</div>
 	</div>

@@ -4,7 +4,7 @@ import './style.css'
 import SpecialistCard from "./SpecialistCard"
 
 const API_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRMIe9Cx1g9QmlpcGokDNNLpNovTcmAGH3exFQ-RIUZW1KdlGOlcSlnnxQk5b9qa5jiGELQe4HiEzNL/pubhtml';
-const INTERVAL_TIME = 30000;
+const INTERVAL_TIME = 300000;
 
 const Specialists = () => {
   const [specialistsData, setSpecialistsData] = useState([]);
@@ -22,18 +22,20 @@ const Specialists = () => {
 
         const data = [];
         tableRows.forEach((row, index) => {
-          if (index > 1) {
+          if (index > 1 && index !== 3) {
+            const description = row.cells[3].textContent.trim();
+            const descriptionWithoutBreaks = description.replace(/<br\s*\/?>/gi, '\n');
             const rowData = {
               id: index,
               image: row.cells[1].textContent,
               name: row.cells[2].textContent,
-              description: row.cells[3].textContent,
+              description: descriptionWithoutBreaks,
               tg: row.cells[4].textContent,
             };
             data.push(rowData);
           }
         });
-
+        
         setSpecialistsData(data);
       } catch (error) {
         console.error('Error fetching schedule data:', error);

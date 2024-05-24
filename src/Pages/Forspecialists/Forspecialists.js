@@ -5,12 +5,16 @@ import For from "./Components/For/For"
 import SpecialistsWay from './Components/SpecialistsWay/SpecialistsWay';
 import SFAQ from './Components/SFAQ/SFAQ';
 import "./Pagestyle.css"
+import AboutTherapy from './Components/AboutTherapy/AboutTherapy';
+import Scheme from './Components/Scheme/Scheme';
 
 export default class Home extends Component {
   render() {
     return (
       <div className='conofcons'>
         <Cover/>
+        <AboutTherapy />
+        <Scheme />
         <Fit />
         <For />
         <SpecialistsWay />

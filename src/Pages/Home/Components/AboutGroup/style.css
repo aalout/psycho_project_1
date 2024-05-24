@@ -204,3 +204,231 @@
 .aboutgroup-con {
    background-color: #fff;
 }
+
+@media (max-width: 1200px) {
+   .therapy-info-container1 {
+      box-sizing: border-box;
+      width: 100%;
+      height: 535px;
+      padding-right: 48px;
+      padding-left: 48px;
+      background: rgba(202, 221, 228, 1);
+      background-image: none;
+      background-size: cover;
+      border-radius: 57px;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+   }
+
+   .group-session-container {
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      background: var(--color-white);
+   }
+   .group-session-info-container1 {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: center;
+   }
+   .main-heading-text-style {
+      box-sizing: border-box;
+      flex: 0 0 auto;
+      align-self: center;
+      width: 100%;
+      font: 32px Podkova, serif;
+      font-weight: 800;
+      color: var(--color-darkslategrey-d26bdb37);
+      text-align: center;
+      white-space: pre-wrap;
+   }
+   .therapy-info-container {
+      flex: 0 0 auto;
+      padding-right: 0;
+      padding-left: 0;
+      margin-top: 20px;
+   }
+   .therapy-section {
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: center;
+      max-width: 600px;
+      padding-top: 35px;
+      padding-bottom: 111px;
+   }
+   .therapy-heading {
+      flex: 0 0 auto;
+      font: 24px Podkova, serif;
+      font-weight: 800;
+      color: var(--color-darkslategrey-d26bdb37);
+      text-align: left;
+      white-space: pre-wrap;
+   }
+   .innovative-path-description {
+      flex: 0 0 auto;
+      margin-top: 34px;
+      font: 17px Rubik, sans-serif;
+      font-weight: 400;
+      color: rgba(81, 109, 133, 1);
+      text-align: left;
+      white-space: pre-wrap;
+   }
+   .content-wrapper-2 {
+      flex: 0 0 auto;
+      padding-right: 63px;
+      padding-left: 63px;
+      margin-top: 24px;
+   }
+   .detailed-button {
+      box-sizing: border-box;
+      position: relative;
+      display: inline-block;
+      min-width: 400px;
+      height: 64px;
+      font: var(--font-weight-400) var(--font-size-20) Podkova, serif;
+      color: var(--color-darkslategrey-d26bdb37);
+      cursor: pointer;
+      background-color: rgb(255, 255, 255);
+      border: 0px solid;
+      border-color: rgba(15, 111, 183, 1);
+      border-radius: 52px;
+      box-shadow: 0px 6px 0px rgba(190, 209, 217, 1);
+      transition: all .2s;
+      padding: 20px 25px;
+      top: 0;
+  }
+  .detailed-button:active {
+      top: 3px;
+      box-shadow: 0 2px 0px rgba(190, 209, 217, 1);
+      transition: all .2s;
+  }
+   .group-session-details-container {
+      background-image: none;
+      display: flex;
+      flex: 0 0 auto;
+      flex-direction: row;
+      gap: 0;
+      align-items: flex-end;
+      justify-content: center;
+      margin-top: 0;
+   }
+   .group-session-info-container {
+      box-sizing: border-box;
+      display: flex;
+      flex: 0 0 auto;
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: flex-start;
+      width: 100%;
+   }
+   .highlighted-text-block {
+      box-sizing: border-box;
+      flex: 0 0 auto;
+      align-self: center;
+      width: 100%;
+      font: 32px Podkova, serif;
+      font-weight: 800;
+      color: var(--color-darkslategrey-d26bdb37);
+      text-align: center;
+      white-space: pre-wrap;
+   }
+   .participant-count-text-style {
+      flex: 0 0 auto;
+      margin-top: 25px;
+      font: 16px Rubik, sans-serif;
+      font-weight: 400;
+      color: var(--color-dimgrey-14c2192d);
+      text-align: center;
+      white-space: pre-wrap;
+   }
+   .group-session-info-block {
+      box-sizing: border-box;
+      display: flex;
+      flex: 0 0 auto;
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: flex-start;
+      width: 100%;
+      padding-bottom: 4px;
+   }
+   .session-duration-heading-text-style {
+      flex: 0 0 auto;
+      font: 32px Podkova, serif;
+      font-weight: 800;
+      color: var(--color-darkslategrey-d26bdb37);
+      text-align: center;
+      white-space: pre-wrap;
+   }
+   .group-session-duration-text-style {
+      box-sizing: border-box;
+      flex: 0 0 auto;
+      align-self: center;
+      width: 193px;
+      margin-top: 113px;
+      margin-left: -6px;
+      font: 32px Podkova, serif;
+      font-weight: 800;
+      color: var(--color-darkslategrey-d26bdb37);
+      text-align: center;
+      white-space: pre-wrap;
+   }
+   .session-duration-text-style {
+      box-sizing: border-box;
+      flex: 0 0 auto;
+      align-self: center;
+      width: 252px;
+      margin-top: 36px;
+      margin-left: -7px;
+      font: 16px Rubik, sans-serif;
+      font-weight: 400;
+      color: var(--color-dimgrey-14c2192d);
+      text-align: center;
+      white-space: pre-wrap;
+   }
+   .online-format-box {
+      box-sizing: border-box;
+      display: flex;
+      flex: 0 0 auto;
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: flex-start;
+      width: 252px;
+      padding-top: 152px;
+   }
+   .convenient-format-text-style {
+      flex: 0 0 auto;
+      margin-top: 32px;
+      font: 16px Rubik, sans-serif;
+      font-weight: 400;
+      color: var(--color-dimgrey-14c2192d);
+      text-align: center;
+      white-space: pre-wrap;
+   }
+  
+  .aboutgroup-con {
+     background-color: #fff;
+  }
+}
+
+@media (max-width: 650px) {
+   .aboutgroup-con {
+       margin-top: 100px;
+     }
+
+     .therapy-info-container1 {
+      box-sizing: border-box;
+      width: 100%;
+      height: 535px;
+      padding-right: 48px;
+      padding-left: 48px;
+      background: rgba(202, 221, 228, 1);
+      background-image: none;
+      background-size: cover;
+      border-radius: 57px;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+   }
+}
