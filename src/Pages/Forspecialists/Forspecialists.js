@@ -7,6 +7,7 @@ import SFAQ from './Components/SFAQ/SFAQ';
 import "./Pagestyle.css"
 import AboutTherapy from './Components/AboutTherapy/AboutTherapy';
 import Scheme from './Components/Scheme/Scheme';
+import SchemeMobile from './Components/SchemeMobile/SchemeMobile';
 
 export default class Home extends Component {
   render() {
@@ -14,6 +15,7 @@ export default class Home extends Component {
       <div className='conofcons'>
         <Cover/>
         <AboutTherapy />
+        <SchemeMobile/>
         <Scheme />
         <Fit />
         <For />

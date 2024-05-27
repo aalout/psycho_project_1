@@ -8,7 +8,7 @@
     white-space: pre-wrap;
 }
 /* knopka */
-.agroup-schedule-button {
+.group-schedule-button {
     box-sizing: border-box;
     position: relative;
     display: inline-block;
@@ -34,18 +34,116 @@
     transition: all .2s;
 }
 
-.aabout-con {
-    margin-top: 100px;
+.about-con {
     background-color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 
-.avideo-con {
+.video-con {
+    margin-top: 30px;
+    position: relative;
+    width: 50%;
+    height: 54%; /* высота контейнера видео равна высоте экрана */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .youtube {
+    width: 100%; /* ширина видео */
+    height: 100%; /* высота видео */
+    margin: auto; /* центрируем видео */
+  }
+
+.group-schedule-button-container {
     margin-top: 30px;
 }
-.group-schedule-button-container {
-    padding-top: 60px;
-}
+
+@media (max-width: 2000px) {
+    .video-con {
+        margin-top: 30px;
+        position: relative;
+        width: 60%;
+        height: 54%; /* высота контейнера видео равна высоте экрана */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+  }
+
+  @media (max-width: 1600px) {
+    .video-con {
+        margin-top: 30px;
+        position: relative;
+        width: 60%;
+        height: 45%; /* высота контейнера видео равна высоте экрана */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+  }
+
+  @media (max-width: 1400px) {
+    .video-con {
+        margin-top: 30px;
+        position: relative;
+        width: 60%;
+        height: 38%; /* высота контейнера видео равна высоте экрана */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+  }
+  
+  @media (max-width: 1200px) {
+    .video-con {
+        margin-top: 30px;
+        position: relative;
+        width: 72%;
+        height: 38%; /* высота контейнера видео равна высоте экрана */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+  }
+
+  @media (max-width: 1000px) {
+    .video-con {
+        margin-top: 30px;
+        position: relative;
+        width: 72%;
+        height: 33%; /* высота контейнера видео равна высоте экрана */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+  }
+
+  @media (max-width: 800px) {
+    .video-con {
+        margin-top: 30px;
+        position: relative;
+        width: 72%;
+        height: 26%; /* высота контейнера видео равна высоте экрана */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+  }
+
+  @media (max-width: 600px) {
+    .video-con {
+        margin-top: 30px;
+        position: relative;
+        width: 90%;
+        height: 26%; /* высота контейнера видео равна высоте экрана */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+  }

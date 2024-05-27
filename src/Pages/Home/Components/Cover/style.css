@@ -115,3 +115,37 @@
         margin-left: 15px;
     }
 }
+
+@media (max-width: 550px) {
+    .majestic-heading {
+        font: var(--font-weight-900) 76px Nunito, sans-serif;
+        color: var(--color-darkslategrey-d26bdb37);
+        letter-spacing: 15.96px;
+        white-space: pre-wrap;
+        text-shadow: rgba(191, 191, 191, 1) 0px 4px 4px;
+        text-align: center;
+    }
+
+    .majestic-text-block {
+        box-sizing: border-box;
+        width: 100%;
+        margin-top: 16px;
+        font: var(--font-weight-400) 24px Podkova, serif;
+        color: var(--color-darkslategrey-d26bdb37);
+        text-align: center;
+        white-space: pre-wrap;
+    }
+    
+    .visionary-text {
+        font: var(--font-weight-400) 24px Podkova, serif;
+        color: rgba(160, 182, 50, 1);
+        text-align: center;
+    }
+    
+    .elevated-text-block {
+        margin-top: 17px;
+        font: var(--font-weight-400) var(--font-size-20) Podkova, serif;
+        color: var(--color-darkslategrey-d26bdb37);
+        white-space: pre-wrap;
+    }
+}

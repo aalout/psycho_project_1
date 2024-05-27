@@ -56,6 +56,14 @@
     color: var(--color-darkslategrey-d26bdb37);
     white-space: pre-wrap;
   }
+
+  .forheading-title {
+    margin-top: 100px;
+    font: 32px Podkova, serif;
+    font-weight: 800;
+    color: var(--color-darkslategrey-d26bdb37);
+    white-space: pre-wrap;
+  }
   
   .forsecondary-text {
     font: 16px Rubik, sans-serif;
@@ -76,17 +84,93 @@
   }
 
   @media (max-width: 1000px) {
+    .forbr {
+      display: none;
+    }
+
     .forheading-text {
-      font: 24px Podkova, serif;
+      font: 28px Podkova, serif;
       font-weight: 800;
       color: var(--color-darkslategrey-d26bdb37);
-      white-space: pre-wrap;
+      white-space: nowrap;
+      margin-top: 0;
+      padding-left: 15px;
     }
     
     .forsecondary-text {
-      font: 10px Rubik, sans-serif;
+      font: 16px Rubik, sans-serif;
       font-weight: 400;
       color: rgba(81, 109, 133, 1);
       white-space: pre-wrap;
+      padding: 7px 20px;
+    }
+
+    .ford-flex {
+      margin-top: 0;
+      display: contents;
+    }
+
+    .forleftpane {
+      display: flex;
+      background-image: none;
+      text-align: left;
+      width: 100%;
+      height: 70px;
+    }
+    
+    .formiddlepane {
+      display: flex;
+      background-image: none;
+      text-align: left;
+      width: 100%;
+      height: 70px;
+    }
+    
+    .forrightpane {
+      display: flex;
+      background-image: none;
+      text-align: left;
+      width: 100%;
+      height: 70px;
     }
   }
+
+@media (max-width: 1500px) {
+  .forleftpane {
+    background-image: none;
+  }
+  
+  .formiddlepane {
+    background-image: none;
+  }
+  
+  .forrightpane {
+    background-image: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .forleftpane {
+    display: contents;
+    background-image: none;
+    text-align: left;
+    width: 100%;
+    height: 70px;
+  }
+  
+  .formiddlepane {
+    display: contents;
+    background-image: none;
+    text-align: left;
+    width: 100%;
+    height: 70px;
+  }
+  
+  .forrightpane {
+    display: contents;
+    background-image: none;
+    text-align: left;
+    width: 100%;
+    height: 70px;
+  }
+}

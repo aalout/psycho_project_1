@@ -422,7 +422,7 @@
      .therapy-info-container1 {
       box-sizing: border-box;
       width: 100%;
-      height: 535px;
+      height: 100%;
       padding-right: 48px;
       padding-left: 48px;
       background: rgba(202, 221, 228, 1);
@@ -431,4 +431,39 @@
       border-radius: 57px;
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
    }
+
+   .brbr {
+      display: none;
+   }
+
+   .main-heading-text-style {
+      box-sizing: border-box;
+      flex: 0 0 auto;
+      align-self: center;
+      width: 100%;
+      font: 32px Podkova, serif;
+      font-weight: 800;
+      color: var(--color-darkslategrey-d26bdb37);
+      text-align: center;
+      white-space: pre-wrap;
+   }
+
+   .detailed-button {
+      box-sizing: border-box;
+      position: relative;
+      display: inline-block;
+      min-width: 100%;
+      height: 64px;
+      font: var(--font-weight-400) var(--font-size-20) Podkova, serif;
+      color: var(--color-darkslategrey-d26bdb37);
+      cursor: pointer;
+      background-color: rgb(255, 255, 255);
+      border: 0px solid;
+      border-color: rgba(15, 111, 183, 1);
+      border-radius: 52px;
+      box-shadow: 0px 6px 0px rgba(190, 209, 217, 1);
+      transition: all .2s;
+      padding: 20px 25px;
+      top: 0;
+  }
 }

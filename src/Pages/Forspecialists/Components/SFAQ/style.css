@@ -1,3 +1,9 @@
 .SFAQ-con {
     background-color: #fff;
 }
+
+@media (max-width: 1000px) {
+    .SFAQ-con {
+        margin-top: 80px;
+    }
+}

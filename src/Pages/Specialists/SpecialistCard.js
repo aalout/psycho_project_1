@@ -17,7 +17,7 @@ const SpecialistCard = ({ specialist, expanded, onExpand, focused }) => {
         <p className="specialist-name">{specialist.name}</p>
         <TextCollapse text={specialist.description} expanded={expanded} onExpand={onExpand} />
         <button onClick={() => window.location.href = specialist.tg} className="tg-group-schedule-button">
-          <p className="modal_button-txt">Написать специалисту</p>
+          <p className="modal_button-txt">Написать <span className='spanbut'>специалисту</span></p>
         </button>
       </div>
     </div>

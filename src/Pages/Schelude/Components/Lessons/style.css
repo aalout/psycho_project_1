@@ -178,14 +178,12 @@
         width: 300px;
         max-height: 150px;
       }
+  }
 
-      .modal {
-        width: 90%;
-        height: 90vh;
-        max-height: none;
-        margin: 0 auto;
-        overflow-y: auto;
-      }
+  @media (max-width: 700px) {
+    .modal {
+
+    }
   }
 
   @media (max-width: 600px) {
@@ -342,7 +340,7 @@
 @media (max-width: 2300px) {
   .modal {
     top: 50%;
-    left: 44%;
+    left: 50%;
     width: 80%;
     height: 60%;
     max-height: 800px;
@@ -376,10 +374,72 @@
   padding-top: 20px;
   padding-left: 0;
 }
+}
 
-.modal {
-  width: 90%;
-  height: auto;
+@media (max-width: 800px) {
+  .modal {
+    margin-top: 100px;
+    height: 100vh;
+    max-height: 1000px;
+  }
+
+  .modal_group-schedule-button {
+    width: 100%;
+    min-width: 0;
+    text-align: center;
+    white-space: nowrap;
+    padding: 20px 25px;
+    margin:0 0;
+}
+
+.modal_group-schedule-button-container {
+  padding-bottom: 50px;
+}
+
+.modal_psychotherapy-text-style {
+  text-align: left;
+}
+
+.modal_majestic-heading-1 {
+  text-align: left;
+}
+
+.modal_image-container-with-border {
+  margin-left: 0px;
+}
+
+.modal_psychotherapy-info-block {
+  margin-left: 0;
+}
+
+.modal_majestic-heading-name {
+  margin-top: 20px;
+  margin-left: 0;
+  padding-top: 13px;
+  font: 20px Podkova, serif;
+  font-weight: 800;
+  color: var(--color-darkslategrey-d26bdb37);
+  white-space: pre-wrap;
+  text-align: center;
+}
+
+.modal_specialist_name_con {
+  height: 60px;
+  width: 100%;
+  background-image: none;
+}
+
+.modal_psychotherapy-platform-welcome {
+  padding-right: 3px;
+  padding-left: 3px;
+}
+
+.modal_majestic-heading-2 {
+  margin-top: 20px;
+  font: 20px Podkova, serif;
+  font-weight: 800;
+  color: var(--color-darkslategrey-d26bdb37);
+  white-space: pre-wrap;
 }
 }
 

@@ -9,7 +9,7 @@ import "./style.css"
 export default class Way extends Component {
   render() {
     return (
-        <div id='way' className='maindivway'>
+        <div className='maindivway'>
           <div className='seconddiv'>
             <div className='divflex'>
               <div className='left'>

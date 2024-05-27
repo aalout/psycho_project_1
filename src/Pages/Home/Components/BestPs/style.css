@@ -88,4 +88,19 @@
       width: 100%;
       height: 300px;
     }
+
+    .gheading-text {
+      font: 24px Podkova, serif;
+      font-weight: 800;
+      color: var(--color-darkslategrey-d26bdb37);
+      white-space: pre-wrap;
+    }
+
+    .gsecondary-text {
+      margin-top: 35px;
+      font: 14px Rubik, sans-serif;
+      font-weight: 400;
+      color: rgba(81, 109, 133, 1);
+      white-space: pre-wrap;
+    }
   }

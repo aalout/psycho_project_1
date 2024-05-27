@@ -50,7 +50,11 @@ export default class Footer extends Component {
         </li>
         
         <li className='gap'>
-          <a href="https://t.me/prof_identity"><img alt="smth" src={arrow} className='arrow'/>Telegram</a>
+          <a href="https://t.me/sreda_svoim "><img alt="smth" src={arrow} className='arrow'/>Telegram для своих</a>
+        </li>
+
+        <li className='gap'>
+          <a href="https://t.me/prof_identity"><img alt="smth" src={arrow} className='arrow'/>Telegram для психологов</a>
         </li>
       </ul>
     </li>

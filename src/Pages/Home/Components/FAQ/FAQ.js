@@ -4,7 +4,7 @@ import "./FAQ.css"
 export default class FAQ extends Component {
   render() {
     return (
-      <div className='FAQ-con'>
+      <div id='way' className='FAQ-con'>
         <section>
   <h1 className="FAQheading-text">
     Вопросы и ответы

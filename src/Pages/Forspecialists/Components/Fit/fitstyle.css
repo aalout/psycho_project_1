@@ -115,7 +115,7 @@
 }
 
 .fittoppane {
-    margin-top: 200px;
+    margin-top: 100px;
     text-align: center;
     width: 100%;
     height: 150px;
@@ -127,3 +127,98 @@
     color: var(--color-darkslategrey-d26bdb37);
     white-space: pre-wrap;
   }
+
+@media (max-width: 1000px) {
+    .item1 {
+        background-image: url(../pic/1.png);
+        background-size: 100px 120px;
+        background-repeat: no-repeat;
+        background-position: 10% 0%;
+        flex: 0 0 calc(30% - 100px); /* Ширина каждого пункта - точно 30%, с учетом отступа в 100px */
+        margin: 15px; /* Расстояние между пунктами */
+        width: 200px;
+        height: 200px;
+    }
+    
+    .item2 {
+        background-image: url(../pic/2.png);
+        background-size: 100px 120px;
+        background-repeat: no-repeat;
+        background-position: 10% 0%;
+        flex: 0 0 calc(30% - 100px); /* Ширина каждого пункта - точно 30%, с учетом отступа в 100px */
+        margin: 15px; /* Расстояние между пунктами */
+        width: 200px;
+        height: 200px;
+    }
+    
+    
+    .item3 {
+        background-image: url(../pic/3.png);
+        background-size: 100px 120px;
+        background-repeat: no-repeat;
+        background-position: 10% 0%;
+        flex: 0 0 calc(30% - 100px); /* Ширина каждого пункта - точно 30%, с учетом отступа в 100px */
+        margin: 15px; /* Расстояние между пунктами */
+        width: 200px;
+        height: 200px;
+    }
+    
+    
+    .item4 {
+        background-image: url(../pic/4.png);
+        background-size: 100px 120px;
+        background-repeat: no-repeat;
+        background-position: 10% 0%;
+        flex: 0 0 calc(30% - 100px); /* Ширина каждого пункта - точно 30%, с учетом отступа в 100px */
+        margin: 15px; /* Расстояние между пунктами */
+        width: 200px;
+        height: 200px;
+    }
+    
+    
+    .item5 {
+        background-image: url(../pic/5.png);
+        background-size: 100px 120px;
+        background-repeat: no-repeat;
+        background-position: 10% 0%;
+        flex: 0 0 calc(30% - 100px); /* Ширина каждого пункта - точно 30%, с учетом отступа в 100px */
+        margin: 15px; /* Расстояние между пунктами */
+        width: 200px;
+        height: 200px;
+    }
+    
+    
+    .item6 {
+        background-image: url(../pic/6.png);
+        background-size: 100px 120px;
+        background-repeat: no-repeat;
+        background-position: 10% 0%;
+        flex: 0 0 calc(30% - 100px); /* Ширина каждого пункта - точно 30%, с учетом отступа в 100px */
+        margin: 15px; /* Расстояние между пунктами */
+        width: 200px;
+        height: 200px;
+    }
+
+    .itemtitle11 {
+        margin-top: 65px;
+        font: 22px Podkova, sans-serif;
+        font-weight: 800;
+        color: var(--color-darkslategrey-d26bdb37);
+        white-space: pre-wrap;
+        text-align: center;
+    }
+    
+    .itemtitle111 {
+        margin-top: 65px;
+        font: 22px Podkova, sans-serif;
+        font-weight: 800;
+        color: var(--color-darkslategrey-d26bdb37);
+        white-space: pre-wrap;
+    }
+
+    .itemtext11 {
+        font: 16px Rubik, sans-serif;
+        font-weight: 400;
+        color: rgba(81, 109, 133, 1);
+    }
+}
