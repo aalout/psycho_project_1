@@ -5,10 +5,10 @@ import "./style.css"
 const SpecialistCard = ({ specialist, expanded, onExpand, focused }) => {
     return (
       <div
-        className={`specialist-card ${expanded? 'expanded' : ''} ${focused? 'focused' : ''}`}
+        className={`specialist-card ${expanded ? 'expanded' : ''} ${focused ? 'focused' : ''}`}
         key={specialist.id}
         id={`specialist-card-${specialist.id}`}
-        style={focused? {} : { position: 'static' }}
+        style={focused ? {} : { position: 'static' }}
       >
       <div className="specialist-image-container">
         <img src={specialist.image} alt={specialist.name} />

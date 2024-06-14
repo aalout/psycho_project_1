@@ -23,15 +23,15 @@ const Specialists = () => {
         const data = [];
         tableRows.forEach((row, index) => {
           if (index > 1 && index !== 3) {
-            const description = row.cells[3].textContent.trim();
-            const descriptionWithoutBreaks = description.replace(/<br\s*\/?>/gi, '\n');
+            const description = row.cells[3].textContent;
             const rowData = {
               id: index,
               image: row.cells[1].textContent,
               name: row.cells[2].textContent,
-              description: descriptionWithoutBreaks,
+              description: description,
               tg: row.cells[4].textContent,
             };
+            console.log("Текст карточки:", rowData.description);
             data.push(rowData);
           }
         });
@@ -41,6 +41,7 @@ const Specialists = () => {
         console.error('Error fetching schedule data:', error);
       }
     };
+
 
     fetchSpecialistsData();
     const interval = setInterval(fetchSpecialistsData, INTERVAL_TIME);

@@ -19,7 +19,7 @@ export default class AboutTherapy extends Component {
 			  <div className='video-con'>
 	  <YouTube
 		className='youtube'
-		videoId="-POgTXAuckU"
+		videoId="ARRzutztGR4"
 		opts={opts}
 	  />
 	</div>
