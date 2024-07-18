@@ -29,7 +29,7 @@ const Lessons = () => {
                             image: row.cells[1].innerText,
                             price: row.cells[4].innerText,
                             date: row.cells[2].innerText,
-                            description: row.cells[3].innerText,
+                            description: row.cells[3].innerHTML.replace(/<br>/g, '<br>').replace(/\n/g, '<br>'),
                             lesson_name: row.cells[5].innerText,
                             specialist_name: row.cells[6].innerText,
                             image_modal: row.cells[7].innerText,
@@ -97,27 +97,29 @@ const Lessons = () => {
 };
 
 const Modal = ({ modalVisible, setModalVisible, modalData }) => {
-    return (
-      <div className={`modal ${modalVisible ? 'visible' : ''}`}>
-        <div className='modal_specialist_name_con'><p className="modal_majestic-heading-name">{modalData.specialist_name} {modalData.date}</p> </div>
-        <div className="modal_psychotherapy-platform-layout">
+  return (
+    <div className={`modal ${modalVisible ? 'visible' : ''}`}>
+      <div className='modal_specialist_name_con'><p className="modal_majestic-heading-name">{modalData.specialist_name} {modalData.date}</p> </div>
+      <div className="modal_psychotherapy-platform-layout">
         <img className="modal_image-container-1" src={modalData.image_modal} alt="smth" />
         <div className="modal_psychotherapy-info-block">
-            <div className="modal_psychotherapy-platform-welcome">
+          <div className="modal_psychotherapy-platform-welcome">
             <span className='modal_close' onClick={setModalVisible}>×</span>
             <p className="modal_majestic-heading-1">{modalData.lesson_name}</p>
-            <p className="modal_psychotherapy-text-style">{modalData.description}</p>
-            <p className="modal_majestic-heading-2">{modalData.price}</p>
+            <div className="modal_psychotherapy-text-style-wrapper">
+              <div className="modal_psychotherapy-text-style" dangerouslySetInnerHTML={{ __html: modalData.description }} />
             </div>
-            <div className="modal_group-schedule-button-container">
+            <p className="modal_majestic-heading-2">{modalData.price}</p>
+          </div>
+          <div className="modal_group-schedule-button-container">
             <button onClick={() => window.location.href = modalData.tg_chat} className="modal_group-schedule-button">
               <p className='modal_button-txt'>Написать специалисту</p>
             </button>
-				</div>
-            </div>
+          </div>
         </div>
       </div>
-    );
-  };
+    </div>
+  );
+};
 
 export default Lessons;

@@ -78,9 +78,33 @@
 
 @media (max-width: 681px) {
     .mobile_scheme {
-        background-image: url(../pic/wowa.png);
+        background-image: none;
         background-repeat: no-repeat;
         background-position: center 210px;
         height: 100%;
     }
+
+    .mobile_row {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      gap: 150px;
+      margin-right: -45px;
+      margin-left: -45px;
+
+      p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-radius: 50%;
+        border: 10px solid rgba(202, 221, 228, 0.8);
+        height: 200px;
+        width: 200px;
+        padding: 5px;
+        margin: 0 auto;
+      }
+  }
 }
