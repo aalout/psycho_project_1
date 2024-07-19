@@ -10,6 +10,9 @@ const SpecialistCard = ({ specialist, expanded, onExpand, focused }) => {
         id={`specialist-card-${specialist.id}`}
         style={focused ? {} : { position: 'static' }}
       >
+                {specialist.isLeadingOnlineGroup === 1 && (
+          <div className="leading-online-group-plaque">Ведущий онлайн групп</div>
+        )}
       <div className="specialist-image-container">
         <img src={specialist.image} alt={specialist.name} />
       </div>

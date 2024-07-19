@@ -28,6 +28,18 @@
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
   }
 
+  .leading-online-group-plaque {
+    position: absolute;
+    margin-left: 37%;
+    padding: 10px;
+    background-color: rgba(194, 223, 234, 1);
+    border-radius: 0 0 10px 10px;
+    font: 16px Podkova, sans-serif;
+    font-weight: 600;
+    color: var(--color-darkslategrey-d26bdb37);
+    border-bottom: 2px solid var(--color-darkslategrey-d26bdb37);
+  }
+
 
   .expanded {
     width: 85%;

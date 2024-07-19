@@ -29,8 +29,8 @@ const Specialists = () => {
               name: row.cells[2].textContent,
               description: row.cells[3].innerHTML.replace(/<br>/g, '<br>').replace(/\n/g, '<br>'),
               tg: row.cells[4].textContent,
+              isLeadingOnlineGroup: row.cells[5].textContent === 'Ведущий онлайн групп'? 1 : 0,
             };
-            console.log("Текст карточки:", rowData.description);
             data.push(rowData);
           }
         });
