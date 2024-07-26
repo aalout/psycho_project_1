@@ -1,0 +1,27 @@
+.public__con {
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+    font: 17px Rubik, sans-serif;
+    font-weight: 400;
+    color: rgba(81, 109, 133, 1);
+    max-height: 100vh !important;
+}
+
+.public__con__heading {
+    font: 32px Podkova, serif;
+    font-weight: 800;
+    color: var(--color-darkslategrey-d26bdb37);
+}
+
+@media (max-width: 800px) {
+    .public__con {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        padding-top: 100px;
+        font: 15px Rubik, sans-serif;
+        font-weight: 400;
+        color: rgba(81, 109, 133, 1);
+    }
+}

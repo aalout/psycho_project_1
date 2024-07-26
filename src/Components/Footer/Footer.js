@@ -62,6 +62,8 @@ export default class Footer extends Component {
   
   <div className="legal">
     <p>&copy; 2024 Среда. All rights reserved.</p>
+    <a className='legal__a' href="/personal ">Пользовательское соглашение</a>
+    <a className='legal__a' href="/public ">Согласие на обработку персональных данных</a>
     
     <div className="legal__links">
       <span>Made by aalout</span>

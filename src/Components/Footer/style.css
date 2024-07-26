@@ -113,6 +113,15 @@
   .legal {
     display: flex;
     flex-wrap: wrap;
+    gap: 30px;
+    color: var(--color-darkslategrey-d26bdb37);
+    font: 16px Podkova, serif;
+    font-weight: 400;
+  }
+
+  .legal__a {
+    font: 16px Podkova, serif;
+    font-weight: 400;
     color: var(--color-darkslategrey-d26bdb37);
   }
     

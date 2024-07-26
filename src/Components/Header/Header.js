@@ -9,6 +9,8 @@ import Forspecialists from '../../Pages/Forspecialists/Forspecialists';
 import Home from "../../Pages/Home/Home"
 import Schedule from "../../Pages/Schelude/Schelude"
 import Specialists from "../../Pages/Specialists/Specialists"
+import Personal from '../../Pages/Personal/Personal';
+import Public from '../../Pages/Public/Public';
 import { Dropdown } from 'react-bootstrap';
 
 import './style.css';
@@ -45,6 +47,8 @@ export default function Header() {
 			<Route path='/' element={<Home/>}/>
 			<Route path='/schedule' element={<Schedule/>}/>
 			<Route path='/specialists' element={<Specialists/>}/>
+			<Route path='/personal' element={<Personal/>}/>
+			<Route path='/public' element={<Public/>}/>
 			<Route path='/forspecialists' element={<Forspecialists/>}/> </Routes>
 	</Router>
 	</>
