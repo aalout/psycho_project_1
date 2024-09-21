@@ -1,27 +1,15 @@
 import React, { Component } from 'react'
 import { Nav } from 'react-bootstrap';
-import YouTube from 'react-youtube';
 import "./style.css"
 
 export default class About extends Component {
   render() {
-	const opts = {
-		width: "100%",
-		height: "100%",
-		playerVars: {
-		  autoplay: 0,
-		},
-	};
 
     return (
 		<div className='about-con' id='about'>
 		  <p className="main-heading-style">О проекте</p>
 		  <div className='video-con'>
-  <YouTube
-    className='youtube'
-    videoId="-POgTXAuckU"
-    opts={opts}
-  />
+		  <iframe title='welcome' className='video-welcome' src="https://rutube.ru/play/embed/edc6d4e51d047507723d9f9c3f59dda3/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 </div>
 		  <div className="group-schedule-button-container">
 			<Nav.Link href="/schedule">

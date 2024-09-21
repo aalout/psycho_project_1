@@ -43,15 +43,13 @@
     height: 100vh;
 }
 
-.video-con {
-    margin-top: 30px;
-    position: relative;
-    width: 50%;
-    height: 54%; /* высота контейнера видео равна высоте экрана */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.video-welcome {
+  width: 1000px;
+  height: 560px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
   
   .youtube {
     width: 100%; /* ширина видео */
@@ -63,101 +61,54 @@
     margin-top: 30px;
 }
 
-@media (max-width: 2000px) {
-    .video-con {
-        margin-top: 30px;
-        position: relative;
-        width: 60%;
-        height: 54%; /* высота контейнера видео равна высоте экрана */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-  }
-
   @media (max-width: 1600px) {
-    .video-con {
-        margin-top: 30px;
-        position: relative;
-        width: 60%;
-        height: 45%; /* высота контейнера видео равна высоте экрана */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-  }
-
-  @media (max-width: 1400px) {
-    .video-con {
-        margin-top: 30px;
-        position: relative;
-        width: 60%;
-        height: 38%; /* высота контейнера видео равна высоте экрана */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
+    .video-welcome {
+      width: 900px;
+      height: 500px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
   
   @media (max-width: 1200px) {
-    .video-con {
-        margin-top: 30px;
-        position: relative;
-        width: 72%;
-        height: 38%; /* высота контейнера видео равна высоте экрана */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
+    .video-welcome {
+      width: 800px;
+      height: 450px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
 
   @media (max-width: 1000px) {
-    .video-con {
-        margin-top: 30px;
-        position: relative;
-        width: 72%;
-        height: 33%; /* высота контейнера видео равна высоте экрана */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
+    .video-welcome {
+      width: 700px;
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
 
   @media (max-width: 800px) {
-    .video-con {
-        margin-top: 30px;
-        position: relative;
-        width: 72%;
-        height: 26%; /* высота контейнера видео равна высоте экрана */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-  }
-
-  @media (max-width: 600px) {
-    .video-con {
-        margin-top: 30px;
-        position: relative;
-        width: 90%;
-        height: 26%; /* высота контейнера видео равна высоте экрана */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
+    .video-welcome {
+      width: 600px;
+      height: 330px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
 
   @media (max-width: 500px) {
-    .video-con {
-        margin-top: 30px;
-        position: relative;
-        width: 80%;
-        height: 22%; /* высота контейнера видео равна высоте экрана */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
+    .video-welcome {
+      width: 400px;
+      height: 220px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
       .group-schedule-button {
         box-sizing: border-box;
